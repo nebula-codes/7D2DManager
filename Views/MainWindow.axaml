@@ -52,7 +52,217 @@
 
 
 			<Grid Grid.Column="1">
-				
+				<StackPanel Margin="15">
+					<TabControl>
+						<TabItem Header="Administration" Foreground="White">
+							<TabControl>
+								<TabItem Header="General" Foreground="White" FontSize="20">
+									<StackPanel>
+											<StackPanel>
+												<Label ToolTip.Tip="Whatever you want the name of the server to be." Content="Server Name" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Server Description" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Server Password" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox PasswordChar="*" Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Server Website URL" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Language" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Region" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+										
+									</StackPanel>
+
+								</TabItem>
+								<TabItem Header="Networking" Foreground="White" FontSize="20">
+									<StackPanel>
+										<StackPanel>
+											<Label Content="Server Port" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="Server Visibility" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="Server Disabled Network Protocols" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="Server Max World Transfer Speed (KiBs)" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+									</StackPanel>
+
+								</TabItem>
+								<TabItem Header="Slots" Foreground="White" FontSize="20">
+									<StackPanel>
+										<StackPanel>
+											<Label Content="Server Max Player Count" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="Server Reserved Slots" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="Server Reserved Slots Permission" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="Server Admin Slots" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="Server Admin Slots Permission" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+									</StackPanel>
+									
+									
+								</TabItem>
+
+								<TabItem Header="Admin interfaces" Foreground="White" FontSize="20">
+									<Grid ColumnDefinitions="2*, 2*">
+										<StackPanel Grid.Column="0" Margin="0,0,10,00">
+
+											<StackPanel>
+												<Label Content="Control Panel Enabled" Foreground="White" Margin="0,10,0,5"/>
+												<DropDown SelectedIndex="0" Foreground="White" Background="Transparent" BorderBrush="White">
+													<DropDownItem>True</DropDownItem>
+													<DropDownItem>False</DropDownItem>
+												</DropDown>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Control Panel Port" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Control Panel Password" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+
+											<StackPanel>
+												<Label Content="Telnet Enabled" Foreground="White" Margin="0,10,0,5"/>
+												<DropDown SelectedIndex="0" Foreground="White" Background="Transparent" BorderBrush="White">
+													<DropDownItem>True</DropDownItem>
+													<DropDownItem>False</DropDownItem>
+												</DropDown>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Telnet Port" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Telnet Panel Password" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Telnet Failed Login Limit" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Telnet Failed Logins Block Time" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+
+										</StackPanel>
+										
+
+										<StackPanel Grid.Column="1">
+
+											
+											<StackPanel>
+												<Label Content="Terminal Window Enabled" Foreground="White" Margin="0,10,0,5"/>
+												<DropDown SelectedIndex="0" Foreground="White" Background="Transparent" BorderBrush="White">
+													<DropDownItem>True</DropDownItem>
+													<DropDownItem>False</DropDownItem>
+												</DropDown>
+											</StackPanel>
+
+											<StackPanel>
+												<Label Content="Admin File Name" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="EAC Enabled" Foreground="White" Margin="0,10,0,5"/>
+												<DropDown SelectedIndex="0" Foreground="White" Background="Transparent" BorderBrush="White">
+													<DropDownItem>True</DropDownItem>
+													<DropDownItem>False</DropDownItem>
+												</DropDown>
+											</StackPanel>
+											<StackPanel>
+												<Label Content="Hide Command Execution Log" Foreground="White" Margin="0,10,0,5"/>
+												<DropDown SelectedIndex="0" Foreground="White" Background="Transparent" BorderBrush="White">
+													<DropDownItem>True</DropDownItem>
+													<DropDownItem>False</DropDownItem>
+												</DropDown>
+											</StackPanel>
+
+											<StackPanel>
+												<Label Content="Max Uncovered Map Chunks Per Player" Foreground="White" Margin="0,10,0,5"/>
+												<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+											</StackPanel>
+
+											<StackPanel>
+												<Label Content="Persistent Player Profiles" Foreground="White" Margin="0,10,0,5"/>
+												<DropDown SelectedIndex="0" Foreground="White" Background="Transparent" BorderBrush="White">
+													<DropDownItem>True</DropDownItem>
+													<DropDownItem>False</DropDownItem>
+												</DropDown>
+											</StackPanel>
+										</StackPanel>
+									</Grid>
+									
+
+
+								</TabItem>
+							</TabControl>
+						</TabItem>
+						<TabItem Header="Gameplay" Foreground="White">
+							<TabControl>
+								<TabItem Header="World" Foreground="White">
+									<StackPanel>
+										<StackPanel>
+											<Label ToolTip.Tip="" Content="Game World" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="World Gen Seed" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="World Gen Size" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="Game Name" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+										<StackPanel>
+											<Label Content="Game Mode" Foreground="White" Margin="0,10,0,5"/>
+											<TextBox Foreground="White" Background="Transparent" BorderBrush="White"/>
+										</StackPanel>
+
+									</StackPanel>
+								</TabItem>
+							</TabControl>
+						</TabItem>
+					</TabControl>
+
+				</StackPanel>
 			</Grid>
 		</Grid>
 	</Panel>
